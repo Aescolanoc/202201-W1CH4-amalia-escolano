@@ -1,17 +1,57 @@
-/* Error: expected "{".
- *    ,
- * 74 | .groceries
- *    |           ^
- *    '
- *   style.scss 74:11  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 74 \2502  .groceries\a    \2502            ^\a    \2575 \a   style.scss 74:11  root stylesheet';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+.content_buy, .content__info, .content__header, .menu, .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #6480cb;
+  height: 100px;
+  align-items: center;
+  padding: 30px;
+}
+
+.menu {
+  list-style-type: none;
+  padding-top: 10px;
+  gap: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+
+.list-menu {
+  font-weight: bold;
+}
+
+.content__header {
+  background-color: #e77c2f;
+  height: 80px;
+  padding-top: 20px;
+  gap: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+
+.articles {
+  padding-right: 30px;
+  font-size: 28px;
+}
+
+.logo {
+  background-image: url("./images/plus.png");
+  height: 45px;
+  width: auto;
+  padding-left: 10px;
+}
+
+.content__info {
+  background-color: #f09342;
+}
+
+/*# sourceMappingURL=style.css.map */
