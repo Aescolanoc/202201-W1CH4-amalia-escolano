@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
     <title>202201-W1CH4-amalia-escolano</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -13,7 +19,7 @@
       <nav>
         <ul class="menu">
           <li>Principal</li>
-          <li>Lista</li>
+          <li class="list-menu">Lista</li>
           <li>Acerca de</li>
         </ul>
       </nav>
@@ -21,34 +27,51 @@
     <main class="content">
       <div>
         <div class="content__header">
-          <img src="" alt="" />
-          <span>SPAN</span>
+          <img src="./images/plus.png" alt="siguiente" class="logo" />
+          <span class="articles">2/3 comprados</span>
         </div>
         <div class="content__info">
-          <div class="content_buy">
-            <div class="buy__bread">
+          <div >
+            <ul >
+            <li><div class="buy__bread">
               <input type="checkbox" />
               <label for="">Pan</label>
-            </div>
-            <div class="price_bread">
-              <span>precio</span>
-              <span>X</span>
-            </div>
-            <div class="buy_sugar">
+            </div>   </li>
+            <li>
+              <div class="buy_sugar">
               <input type="checkbox" />
               <label for="">Azúcar</label>
             </div>
-            <div class="price_sugar">
-              <span>precio</span>
-              <span>X</span>
-            </div>
-            <div class="buy_milk">
+            </li>
+            <li>
+              <div class="buy_milk">
               <input type="checkbox" />
               <label for="">Leche</label>
             </div>
-            <div class="price_milk">
-              <span>precio</span>
-              <span>X</span>
+            </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="prices">
+            <li><div class="buy__bread">
+              <input type="checkbox" />
+              <label for="">Pan</label>
+            </div>   </li>
+            <li>
+              <div class="buy_sugar">
+              <input type="checkbox" />
+              <label for="">Azúcar</label>
+            </div>
+            </li>
+            <li>
+              <div class="buy_milk">
+              <input type="checkbox" />
+              <label for="">Leche</label>
+            </div>
+            </li>
+            </ul>
+          </div>
+          </div>
             </div>
           </div>
           <div class="total">
