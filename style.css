@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-.content_buy, .content__info, .content__header, .menu, .header {
+.content_buy, .content__info,
+.total, .content__header, .menu, .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -50,8 +51,19 @@
   padding-left: 10px;
 }
 
-.content__info {
+.content__info,
+.total {
   background-color: #f09342;
+}
+
+.total {
+  justify-content: right;
+  padding: 20px;
+}
+
+.list-items {
+  list-style-type: none;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
