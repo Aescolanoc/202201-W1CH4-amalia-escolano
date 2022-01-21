@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f09342;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #6480cb;
+  height: 100px;
+  align-items: center;
+  padding: 30px;
+}
+.header h1 {
+  font-weight: 300;
+}
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 10px;
+  gap: 10px;
+  font-weight: 500;
+}
+.header .menu .list-menu {
+  font-weight: bold;
+}
+
+.round-button {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  color: #e87c2f;
+  text-align: center;
+  line-height: 52px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.content__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #e87c2f;
+  height: 80px;
+  padding-top: 20px;
+  gap: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+.content__header .articles {
+  padding-right: 30px;
+  font-size: 28px;
+}
+
+.content__info {
+  background-color: #f09342;
+}
+.content__info .list-items {
+  list-style-type: none;
+  padding: 20px;
+}
+.content__info li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.content__info li:hover {
+  color: white;
+  background-color: #b66e31;
+}
+.content__info li.border {
+  border-bottom: 1px solid #d5beaa;
+}
+
+.cross {
+  text-decoration: line-through;
+}
+
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: right;
+  padding: 20px;
+}
+
+.form {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.form > div {
+  margin-bottom: 10px;
+}
+.form input {
+  height: 40px;
+  width: 200px;
+  font-size: 18px;
+  padding-left: 4px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #6380c9;
+  color: white;
+  padding: 10px 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

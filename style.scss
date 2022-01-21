@@ -1,0 +1,129 @@
+$colorblue: #6480cb;
+$colororangedark: #e87c2f;
+$colororangelight: #f09342;
+
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $colororangelight;
+  font-family: "Nunito", sans-serif;
+}
+
+.header {
+  @include flex(row);
+  background-color: $colorblue;
+  height: 100px;
+  align-items: center;
+  padding: 30px;
+
+  h1 {
+    font-weight: 300;
+  }
+
+  .menu {
+    @include flex(row);
+    list-style-type: none;
+    padding-top: 10px;
+    gap: 10px;
+    font-weight: 500;
+
+    .list-menu {
+      font-weight: bold;
+    }
+  }
+}
+
+.round-button {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  border-radius: 50%;
+  color: $colororangedark;
+  text-align: center;
+  line-height: 52px;
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.content__header {
+  @include flex(row);
+  background-color: $colororangedark;
+  height: 80px;
+  padding-top: 20px;
+  gap: 10px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+
+  .articles {
+    padding-right: 30px;
+    font-size: 28px;
+  }
+}
+
+.content__info {
+  background-color: $colororangelight;
+
+  .list-items {
+    list-style-type: none;
+    padding: 20px;
+  }
+
+  li {
+    @include flex(row);
+    margin-bottom: 10px;
+
+    &:hover {
+      color: white;
+      background-color: #b66e31;
+    }
+
+    &.border {
+      border-bottom: 1px solid #d5beaa;
+    }
+  }
+}
+
+.cross {
+  text-decoration: line-through;
+}
+
+.total {
+  @include flex(row);
+  justify-content: right;
+  padding: 20px;
+}
+
+.form {
+  margin-left: 20px;
+  margin-top: 30px;
+
+  & > div {
+    margin-bottom: 10px;
+  }
+
+  input {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    padding-left: 4px;
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: #6380c9;
+  color: white;
+  padding: 10px 5px;
+}
